@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.speediance-pipeline/schema/daily.schema.json",
+  "title": "Speediance training day",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source", "version", "date", "generated_at", "sessions", "prs"],
+  "properties": {
+    "source": {"const": "speediance"},
+    "version": {"const": "1.3.0"},
+    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "sessions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/session"}
+    },
+    "prs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/pr"}
+    }
+  },
+  "$defs": {
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start_time",
+        "duration_min",
+        "calories",
+        "calories_estimated",
+        "total_volume_kg",
+        "muscle_groups",
+        "detail_available",
+        "exercises"
+      ],
+      "properties": {
+        "start_time": {"type": "string", "format": "date-time"},
+        "duration_min": {"type": "number", "minimum": 0},
+        "calories": {"type": ["number", "null"]},
+        "calories_estimated": {"const": true},
+        "total_volume_kg": {"type": "number", "minimum": 0},
+        "vendor_volume_kg": {"type": ["number", "null"]},
+        "muscle_groups": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/muscle"}
+        },
+        "detail_available": {"type": "boolean"},
+        "exercises": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/exercise"}
+        }
+      }
+    },
+    "exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "muscle_group", "muscle_group_raw", "sets"],
+      "properties": {
+        "name": {"type": "string"},
+        "muscle_group": {"$ref": "#/$defs/muscle"},
+        "muscle_group_raw": {"type": ["string", "null"]},
+        "sets": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/set"}
+        }
+      }
+    },
+    "set": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["weight_kg"],
+      "anyOf": [
+        {"required": ["reps"]},
+        {"required": ["duration_s"]}
+      ],
+      "properties": {
+        "reps": {"type": "integer", "minimum": 1},
+        "duration_s": {"type": "integer", "minimum": 1},
+        "weight_kg": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "mode": {"type": ["number", "string"]},
+        "excluded_from_prs": {"type": "boolean"}
+      }
+    },
+    "muscle": {
+      "enum": [
+        "chest",
+        "back",
+        "shoulders",
+        "biceps",
+        "triceps",
+        "legs",
+        "glutes",
+        "core",
+        "full_body",
+        "other"
+      ]
+    },
+    "pr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exercise", "metric", "old", "new"],
+      "properties": {
+        "exercise": {"type": "string"},
+        "metric": {"enum": ["est_1rm_kg", "top_set_kg"]},
+        "old": {"type": ["number", "null"]},
+        "new": {"type": "number"}
+      }
+    }
+  }
+}

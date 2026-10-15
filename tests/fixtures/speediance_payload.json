@@ -1,0 +1,434 @@
+{
+  "source_weight_unit": "kg",
+  "records": [
+    {
+      "summary": {
+        "trainingId": 1001,
+        "title": "Upper A",
+        "type": 5,
+        "trainingTime": 3000,
+        "calorie": 250,
+        "totalCapacity": 0,
+        "startTimestamp": 1788397200,
+        "endTimestamp": 1788400200,
+        "templateName": "Upper A"
+      },
+      "session": {
+        "trainingTime": 3000,
+        "calorie": 250,
+        "title": "Upper A"
+      },
+      "detail": [
+        {
+          "actionLibraryName": "Bench Press",
+          "trainingPartName": "Chest",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 8,
+              "leftRight": 0,
+              "capacity": 480,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ]
+              }
+            },
+            {
+              "finishedCount": 8,
+              "leftRight": 0,
+              "capacity": 480,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ]
+              }
+            },
+            {
+              "finishedCount": 8,
+              "leftRight": 0,
+              "capacity": 480,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60,
+                  60
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "actionLibraryName": "Dumbbell Row",
+          "trainingPartName": "Back",
+          "isLeftRight": 1,
+          "finishedReps": [
+            {
+              "finishedCount": 10,
+              "leftRight": 1,
+              "capacity": 300,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "leftWeights": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ]
+              }
+            },
+            {
+              "finishedCount": 10,
+              "leftRight": 2,
+              "capacity": 300,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "rightWeights": [
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30,
+                  30
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 1002,
+        "title": "Upper A",
+        "type": 5,
+        "trainingTime": 2700,
+        "calorie": 240,
+        "totalCapacity": 0,
+        "startTimestamp": 1789607400,
+        "endTimestamp": 1789610100,
+        "templateName": "Upper A"
+      },
+      "session": {
+        "trainingTime": 2700,
+        "calorie": 240,
+        "title": "Upper A"
+      },
+      "detail": [
+        {
+          "actionLibraryName": "Bench Press",
+          "trainingPartName": "Chest",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 5,
+              "leftRight": 0,
+              "capacity": 350,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  70,
+                  70,
+                  70,
+                  70,
+                  70
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 1003,
+        "title": "Posterior Chain",
+        "type": 5,
+        "trainingTime": 2400,
+        "calorie": 200,
+        "totalCapacity": 0,
+        "startTimestamp": 1790865000,
+        "endTimestamp": 1790867400,
+        "templateName": "Posterior",
+        "unit": 1
+      },
+      "session": {
+        "trainingTime": 2400,
+        "calorie": 200,
+        "title": "Posterior Chain"
+      },
+      "detail": [
+        {
+          "actionLibraryName": "Romanian Deadlift",
+          "trainingPartName": "Hamstrings",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 5,
+              "leftRight": 0,
+              "capacity": 675,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  135,
+                  135,
+                  135,
+                  135,
+                  135
+                ]
+              }
+            },
+            {
+              "finishedCount": 5,
+              "leftRight": 0,
+              "capacity": 675,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  135,
+                  135,
+                  135,
+                  135,
+                  135
+                ]
+              }
+            },
+            {
+              "finishedCount": 5,
+              "leftRight": 0,
+              "capacity": 675,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  135,
+                  135,
+                  135,
+                  135,
+                  135
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 1004,
+        "title": "Upper A",
+        "type": 5,
+        "trainingTime": 3180,
+        "calorie": 300,
+        "totalCapacity": 0,
+        "startTimestamp": 1791420300,
+        "endTimestamp": 1791423480,
+        "templateName": "Upper A"
+      },
+      "session": {
+        "trainingTime": 3180,
+        "calorie": 300,
+        "title": "Upper A"
+      },
+      "detail": [
+        {
+          "actionLibraryName": "Bench Press",
+          "trainingPartName": "Chest",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 10,
+              "leftRight": 0,
+              "capacity": 650,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  65,
+                  65,
+                  65,
+                  65,
+                  65,
+                  65,
+                  65,
+                  65,
+                  65,
+                  65
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 1005,
+        "title": "Upper A",
+        "type": 5,
+        "trainingTime": 2460,
+        "calorie": 260,
+        "totalCapacity": 0,
+        "startTimestamp": 1791853500,
+        "endTimestamp": 1791855960,
+        "templateName": "Upper A"
+      },
+      "session": {
+        "trainingTime": 2460,
+        "calorie": 260,
+        "title": "Upper A"
+      },
+      "detail": [
+        {
+          "actionLibraryName": "Bench Press",
+          "trainingPartName": "Chest",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 3,
+              "leftRight": 0,
+              "capacity": 240,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  80,
+                  80,
+                  80
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "actionLibraryName": "Incline DB Press",
+          "trainingPartName": "Chest",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 8,
+              "leftRight": 0,
+              "capacity": 192,
+              "trainingInfoDetail": {
+                "weights": [
+                  24,
+                  24,
+                  24,
+                  24,
+                  24,
+                  24,
+                  24,
+                  24
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 1006,
+        "title": "Finisher",
+        "type": 5,
+        "trainingTime": 900,
+        "calorie": 40,
+        "totalCapacity": 0,
+        "startTimestamp": 1791859200,
+        "endTimestamp": 1791860100
+      },
+      "session": {
+        "trainingTime": 900,
+        "calorie": 40,
+        "title": "Finisher"
+      },
+      "detail": [
+        {
+          "actionLibraryName": "Bench Press",
+          "trainingPartName": "Chest",
+          "isLeftRight": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 8,
+              "leftRight": 0,
+              "capacity": 400,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ]
+              }
+            },
+            {
+              "finishedCount": 8,
+              "leftRight": 0,
+              "capacity": 400,
+              "mode": 1,
+              "trainingInfoDetail": {
+                "weights": [
+                  50,
+                  50,
+                  50,
+                  50,
+                  50,
+                  50,
+                  50,
+                  50
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "actionLibraryName": "Plank",
+          "trainingPartName": "Core",
+          "isLeftRight": 0,
+          "completionMethod": 0,
+          "finishedReps": [
+            {
+              "finishedCount": 0,
+              "targetCount": 45,
+              "time": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

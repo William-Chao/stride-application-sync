@@ -1,0 +1,10 @@
+[project]
+name = "speediance-pipeline"
+version = "1.0.0"
+description = "Local-first Speediance training ingestion. A separate bot reads the normalized files."
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31", "jsonschema>=4.21"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.speediance-pipeline/schema/by_exercise.schema.json",
+  "title": "Speediance sets grouped by movement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source",
+    "timezone",
+    "generated_at",
+    "source_status",
+    "last_successful_sync",
+    "movements"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.3.0"},
+    "source": {"const": "speediance"},
+    "timezone": {"const": "America/Los_Angeles"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "source_status": {"enum": ["ok", "stale"]},
+    "last_successful_sync": {"type": ["string", "null"], "format": "date-time"},
+    "movements": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/movement"}
+    }
+  },
+  "$defs": {
+    "movement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "sets"],
+      "properties": {
+        "name": {"type": "string"},
+        "sets": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/set"}
+        }
+      }
+    },
+    "weight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kg", "lb"],
+      "properties": {
+        "kg": {"type": "number", "minimum": 0},
+        "lb": {"type": "number", "minimum": 0}
+      }
+    },
+    "set": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["weight", "reps", "side", "session_id", "timestamp", "estimated_1rm"],
+      "properties": {
+        "weight": {"$ref": "#/$defs/weight"},
+        "reps": {"type": "integer", "minimum": 1},
+        "side": {"enum": ["left", "right", null]},
+        "session_id": {"type": "string", "minLength": 1},
+        "timestamp": {"type": "string", "format": "date-time"},
+        "estimated_1rm": {"$ref": "#/$defs/weight"}
+      }
+    }
+  }
+}
