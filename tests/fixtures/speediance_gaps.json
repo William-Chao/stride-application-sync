@@ -1,0 +1,89 @@
+{
+  "source_weight_unit": "kg",
+  "records": [
+    {
+      "summary": {
+        "trainingId": 2001,
+        "title": "Free Lift",
+        "type": 1,
+        "trainingTime": 900,
+        "calorie": 80,
+        "startTimestamp": 1791766800
+      },
+      "session": {"title": "Free Lift"},
+      "detail_available": true,
+      "detail": [
+        {
+          "actionLibraryName": "Push-up",
+          "mainMuscleGroupName": "Pecs",
+          "finishedReps": [
+            {"finishedCount": 12, "leftRight": 0}
+          ]
+        },
+        {
+          "actionLibraryName": "Front Raise",
+          "mainMuscleGroupName": "Front Delts",
+          "finishedReps": [
+            {"finishedCount": 10, "time": 20, "leftRight": 0}
+          ]
+        },
+        {
+          "actionLibraryName": "Hip Thrust",
+          "mainMuscleGroupName": "Glutes",
+          "finishedReps": [
+            {"finishedCount": 8, "leftRight": 0, "capacity": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 2002,
+        "title": "Quick Core",
+        "type": 7,
+        "trainingTime": 300,
+        "calorie": 40,
+        "startTimestamp": 1791680400
+      },
+      "session": {},
+      "detail_available": true,
+      "detail": [
+        {
+          "actionLibraryName": "Dead Bug",
+          "trainingPartName": "Abs",
+          "completionMethod": 0,
+          "finishedReps": [
+            {"finishedCount": 0, "targetCount": 30, "leftRight": 0}
+          ]
+        },
+        {
+          "actionLibraryName": "Farmer Carry",
+          "mainMuscleGroupName": "Full Body",
+          "finishedReps": [
+            {"finishedCount": 1, "time": 40, "leftRight": 0, "capacity": 0}
+          ]
+        },
+        {
+          "actionLibraryName": "Wrist Curl",
+          "mainMuscleGroupName": "Forearms",
+          "finishedReps": [
+            {"finishedCount": 15, "leftRight": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "summary": {
+        "trainingId": 2003,
+        "title": "Aerobic Row",
+        "type": 4,
+        "trainingTime": 600,
+        "calorie": 90,
+        "startTimestamp": 1791594000
+      },
+      "session": {"name": "Aerobic Row"},
+      "detail_available": false,
+      "detail": []
+    }
+  ]
+}
